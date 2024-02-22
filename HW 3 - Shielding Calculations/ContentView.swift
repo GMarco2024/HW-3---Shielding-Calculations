@@ -20,26 +20,42 @@ struct ContentView: View {
         VStack {
             
             VStack(alignment: .center) {
+                
+                Text("HW 3 Shielding Calculations of Neutrons")
+                    .underline(true, color: .black)
+                    .font(.system(size: 20))
+                    .padding()
+                
                 Text("Neutron Paths")
+                    .font(.headline)
+                    .fontWeight(.regular)
                     
                 TextField("number of Paths", text: $NumberOfPathsString)
                     .padding()
                 
-                VStack(alignment: .center) {
+               
                     Text("Height of Beam Off Ground")
+                        .font(.headline)
+                        .fontWeight(.regular)
                       
                     TextField("Height", text: $BeamOffTheGroundString)
                         .padding()
                     
                     Text("Energy Loss")
+                        .font(.headline)
+                        .fontWeight(.regular)
                     
                     TextField("Loss of Energy", text: $EnergyLossString)
                     
                     Text("Absorbed Neutrons")
+                    .font(.headline)
+                    .fontWeight(.regular)
                     
                     TextField("Number of Nuetrons Absorbed by Wall", text: $NeutronAbsorptionString)
                     
                     Text("Escaped Neutrons")
+                    .font(.headline)
+                    .fontWeight(.regular)
                     
                     TextField("Number of Nuetrons Escaped", text: $NeutronEscapeeString)
                     
@@ -50,4 +66,3 @@ struct ContentView: View {
         
                               
     }
-}
