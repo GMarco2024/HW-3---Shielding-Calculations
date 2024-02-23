@@ -18,6 +18,7 @@ struct ContentView: View {
     @State var EnergyLossString = ".10"
     @State var NeutronAbsorptionString = ""
     @State var NeutronEscapeeString = ""
+    @State var myNeutron = Neutron(position:CGPoint(x: 0.0,y: 0.0) , initialEnergy: 0.0)
     
     var body: some View {
         
@@ -33,8 +34,7 @@ struct ContentView: View {
                     .fontWeight(.regular)
                 
                 Spacer()
-                
-                
+    
                 Text("Neutron Paths")
                     .font(.headline)
                     .fontWeight(.regular)
@@ -75,29 +75,36 @@ struct ContentView: View {
                     .frame(maxWidth: 350)
                     .padding()
                 
-                 Wall(pathEnd: $pathEnd)
+                Wall(pathEnd: $pathEnd)
 
-                    
                 Button(action: {
                   
                     let numberOfPaths = Int(NumberOfPathsString) ?? 1
                     let beamHeight = CGFloat(Double(BeamOffTheGroundString.replacingOccurrences(of: "m", with: "")) ?? 4.0)
                     let energyLossPercent = Double(EnergyLossString) ?? 0.10
                     
-                    let results = simulateNeutronPaths(numberOfPaths: numberOfPaths, beamHeight: beamHeight, energyLossPercent: energyLossPercent, initialEnergy: 1.0, wallDimensions: CGSize(width: 5, height: 5))
+                    let results = myNeutron.simulateNeutronPaths(numberOfPaths: numberOfPaths, beamHeight: beamHeight, energyLossPercent: energyLossPercent, initialEnergy: 1.0, wallDimensions: CGSize(width: 5, height: 5))
                     NeutronAbsorptionString = "\(results.absorbed)"
                     NeutronEscapeeString = "\(results.escaped)"
                     pathEnd = results.endPositions
-                }) {
-                    Text("Simulate Neutron Paths")
+                    
                 }
-                .padding(20)
+                )
+                {
+                    
+                    Text("Simulate Neutron Paths")
+                    
+                }
+                
+                    
+                }
+                .padding()
                 
              
              }
                 .padding()
         }
     }
-}
+
                               
     

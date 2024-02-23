@@ -3,4 +3,150 @@
    uuid = "E649F904-D9D2-4F8A-9C98-F3EC4683AE61"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "768A1690-0FA9-403A-8587-05EB41DA120D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW 3 - Shielding Calculations/PathPositions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "drawParticle(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF8CAB7F-7C26-44EC-93F8-ADB95AE1AF3D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW 3 - Shielding Calculations/PathPositions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "BF8CAB7F-7C26-44EC-93F8-ADB95AE1AF3D - 8a6827dcbae724d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HW_3___Shielding_Calculations.PathPositions.body.getter : some"
+                  moduleName = "HW 3 - Shielding Calculations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phys440marco/Homework/HW-3---Shielding-Calculations/HW%203%20-%20Shielding%20Calculations/PathPositions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "BF8CAB7F-7C26-44EC-93F8-ADB95AE1AF3D - b949a41fe5b0262f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int) -&gt; &lt;&lt;opaque return type of HW_3___Shielding_Calculations.PathPositions.drawParticle(at: (xPosition: Swift.Double, yPosition: Swift.Double)) -&gt; some&gt;&gt;.0 in HW_3___Shielding_Calculations.PathPositions.body.getter : some"
+                  moduleName = "HW 3 - Shielding Calculations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phys440marco/Homework/HW-3---Shielding-Calculations/HW%203%20-%20Shielding%20Calculations/PathPositions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33CC3192-C99B-4A3B-9B88-32598E92A4AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW 3 - Shielding Calculations/Neutron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "simulateMovement(energyLossPercent:wallDimensions:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33CC3192-C99B-4A3B-9B88-32598E92A4AC - be284827bcb7a362"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HW_3___Shielding_Calculations.Neutron.simulateMovement(energyLossPercent: Swift.Double, wallDimensions: __C.CGSize) -&gt; ()"
+                  moduleName = "HW 3 - Shielding Calculations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phys440marco/Homework/HW-3---Shielding-Calculations/HW%203%20-%20Shielding%20Calculations/Neutron.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "33CC3192-C99B-4A3B-9B88-32598E92A4AC - be284827bcb7a362"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HW_3___Shielding_Calculations.Neutron.simulateMovement(energyLossPercent: Swift.Double, wallDimensions: __C.CGSize) -&gt; ()"
+                  moduleName = "HW 3 - Shielding Calculations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phys440marco/Homework/HW-3---Shielding-Calculations/HW%203%20-%20Shielding%20Calculations/Neutron.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFF8195D-B372-4F3C-A777-BF3B48161865"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW 3 - Shielding Calculations/Neutron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "simulateMovement(energyLossPercent:wallDimensions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3285B492-BD28-4E1C-9506-88BF622953BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW 3 - Shielding Calculations/Neutron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "simulateMovement(energyLossPercent:wallDimensions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -17,24 +17,27 @@ struct Wall: View {
     
     var body: some View {
         ZStack {
-            // Drawing the background for the entire view
+            
+            // Drawing the background for the entire view. We make it entirely in black.
+            
             Rectangle()
-                .fill(Color.black) // Background color
+                .fill(Color.black)
                 .frame(width: backgroundWidth, height: backgroundHeight)
             
             // Drawing the simulation area boundary
+            
             Rectangle()
                 .strokeBorder(Color.white, lineWidth: 1)
                 .frame(width: 500, height: 500)
             
-            // Integrating PathPositions to visualize neutron paths
             PathPositions(pathEnd: $pathEnd)
                 .frame(width: backgroundWidth, height: backgroundHeight)
+            
         }
+        
     }
-}
-
     
+}
 
 // Preview for development purposes
 struct Wall_Previews: PreviewProvider {

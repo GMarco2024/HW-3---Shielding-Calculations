@@ -44,6 +44,7 @@ struct PathPositions: View {
             .fill(Color.yellow)
             .frame(width: particleSize, height: particleSize) // Sets the size of the particle
             .offset(x: viewX - backgroundWidth / 2 + particleSize / 2, y: correctedY - backgroundHeight / 2 - particleSize / 2) // Corrects the position to center the particle
+        
     }
 }
 
