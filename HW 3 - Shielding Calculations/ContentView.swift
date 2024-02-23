@@ -12,7 +12,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var particleEndPositions: [(xPosition: Double, yPosition: Double)] = []
+    @State private var pathEnd: [(xPosition: Double, yPosition: Double)] = []
     @State var NumberOfPathsString = "1"
     @State var BeamOffTheGroundString = "4"
     @State var EnergyLossString = ".10"
@@ -75,7 +75,7 @@ struct ContentView: View {
                     .frame(maxWidth: 350)
                     .padding()
                 
-                 Wall(particleEndPositions: $particleEndPositions)
+                 Wall(pathEnd: $pathEnd)
 
                     
                 Button(action: {
@@ -87,7 +87,7 @@ struct ContentView: View {
                     let results = simulateNeutronPaths(numberOfPaths: numberOfPaths, beamHeight: beamHeight, energyLossPercent: energyLossPercent, initialEnergy: 1.0, wallDimensions: CGSize(width: 5, height: 5))
                     NeutronAbsorptionString = "\(results.absorbed)"
                     NeutronEscapeeString = "\(results.escaped)"
-                    particleEndPositions = results.endPositions
+                    pathEnd = results.endPositions
                 }) {
                     Text("Simulate Neutron Paths")
                 }

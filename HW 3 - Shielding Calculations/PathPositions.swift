@@ -10,7 +10,7 @@
 import SwiftUI
 
 struct PathPositions: View {
-    @Binding var particleEndPositions: [(xPosition: Double, yPosition: Double)]
+    @Binding var pathEnd: [(xPosition: Double, yPosition: Double)]
 
     // Defines the size of each particle visualization
     
@@ -23,8 +23,8 @@ struct PathPositions: View {
 
     var body: some View {
         
-        ForEach(particleEndPositions.indices, id: \.self) { index in
-            drawParticle(at: particleEndPositions[index])
+        ForEach(pathEnd.indices, id: \.self) { index in
+            drawParticle(at: pathEnd[index])
         }
     }
 
@@ -49,7 +49,7 @@ struct PathPositions: View {
 
 struct PathPositions_Previews: PreviewProvider {
     static var previews: some View {
-        PathPositions(particleEndPositions: .constant([(xPosition: 2.5, yPosition: 2.5), (xPosition: 1.0, yPosition: 3.0)]))
+        PathPositions(pathEnd: .constant([(xPosition: 2.5, yPosition: 2.5), (xPosition: 1.0, yPosition: 3.0)]))
             .frame(width: 600, height: 600, alignment: .center)
     }
 }

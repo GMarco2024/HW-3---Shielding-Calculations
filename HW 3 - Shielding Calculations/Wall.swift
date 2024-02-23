@@ -10,7 +10,7 @@
 import SwiftUI
 
 struct Wall: View {
-    @Binding var particleEndPositions: [(xPosition: Double, yPosition: Double)]
+    @Binding var pathEnd: [(xPosition: Double, yPosition: Double)]
     
     var backgroundWidth: CGFloat = 600
     var backgroundHeight: CGFloat = 600
@@ -28,7 +28,7 @@ struct Wall: View {
                 .frame(width: 500, height: 500)
             
             // Integrating PathPositions to visualize neutron paths
-            PathPositions(particleEndPositions: $particleEndPositions)
+            PathPositions(pathEnd: $pathEnd)
                 .frame(width: backgroundWidth, height: backgroundHeight)
         }
     }
@@ -39,6 +39,6 @@ struct Wall: View {
 // Preview for development purposes
 struct Wall_Previews: PreviewProvider {
     static var previews: some View {
-        Wall(particleEndPositions: .constant([(xPosition: 2.5, yPosition: 2.5)]))
+        Wall(pathEnd: .constant([(xPosition: 2.5, yPosition: 2.5)]))
     }
 }
