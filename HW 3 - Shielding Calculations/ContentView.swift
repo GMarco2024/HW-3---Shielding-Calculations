@@ -72,8 +72,12 @@ struct ContentView: View {
                     .frame(maxWidth: 350)
                     .padding()
                 
-            }
-            .padding()
+                 Wall()
+                    
+                     .padding()
+                                
+             }
+                     .padding()
         }
     }
 }

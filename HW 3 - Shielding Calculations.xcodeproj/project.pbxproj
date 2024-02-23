@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED95C13B2B884BEC00473FAD /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95C13A2B884BEC00473FAD /* Wall.swift */; };
 		EDDAC4ED2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDAC4EC2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift */; };
 		EDDAC4EF2B87EF570037445E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDAC4EE2B87EF570037445E /* ContentView.swift */; };
 		EDDAC4F12B87EF590037445E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDAC4F02B87EF590037445E /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED95C13A2B884BEC00473FAD /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		EDDAC4E92B87EF570037445E /* HW 3 - Shielding Calculations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 3 - Shielding Calculations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDAC4EC2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HW_3___Shielding_CalculationsApp.swift"; sourceTree = "<group>"; };
 		EDDAC4EE2B87EF570037445E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				EDDAC4EC2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift */,
 				EDDAC4EE2B87EF570037445E /* ContentView.swift */,
+				ED95C13A2B884BEC00473FAD /* Wall.swift */,
 				EDDAC4F02B87EF590037445E /* Assets.xcassets */,
 				EDDAC4F22B87EF590037445E /* HW_3___Shielding_Calculations.entitlements */,
 				EDDAC4F32B87EF590037445E /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDDAC4EF2B87EF570037445E /* ContentView.swift in Sources */,
+				ED95C13B2B884BEC00473FAD /* Wall.swift in Sources */,
 				EDDAC4ED2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
