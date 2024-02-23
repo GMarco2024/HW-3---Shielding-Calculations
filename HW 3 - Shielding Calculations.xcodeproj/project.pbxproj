@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90BA1D6A2B892F8A004157A8 /* Neutron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BA1D692B892F8A004157A8 /* Neutron.swift */; };
+		90BA1D6C2B8932B1004157A8 /* PathPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BA1D6B2B8932B1004157A8 /* PathPositions.swift */; };
 		ED95C13B2B884BEC00473FAD /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95C13A2B884BEC00473FAD /* Wall.swift */; };
 		EDDAC4ED2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDAC4EC2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift */; };
 		EDDAC4EF2B87EF570037445E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDAC4EE2B87EF570037445E /* ContentView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90BA1D692B892F8A004157A8 /* Neutron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neutron.swift; sourceTree = "<group>"; };
+		90BA1D6B2B8932B1004157A8 /* PathPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathPositions.swift; sourceTree = "<group>"; };
 		ED95C13A2B884BEC00473FAD /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		EDDAC4E92B87EF570037445E /* HW 3 - Shielding Calculations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW 3 - Shielding Calculations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDAC4EC2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HW_3___Shielding_CalculationsApp.swift"; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				EDDAC4EC2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift */,
 				EDDAC4EE2B87EF570037445E /* ContentView.swift */,
 				ED95C13A2B884BEC00473FAD /* Wall.swift */,
+				90BA1D692B892F8A004157A8 /* Neutron.swift */,
+				90BA1D6B2B8932B1004157A8 /* PathPositions.swift */,
 				EDDAC4F02B87EF590037445E /* Assets.xcassets */,
 				EDDAC4F22B87EF590037445E /* HW_3___Shielding_Calculations.entitlements */,
 				EDDAC4F32B87EF590037445E /* Preview Content */,
@@ -265,6 +271,8 @@
 				EDDAC4EF2B87EF570037445E /* ContentView.swift in Sources */,
 				ED95C13B2B884BEC00473FAD /* Wall.swift in Sources */,
 				EDDAC4ED2B87EF570037445E /* HW_3___Shielding_CalculationsApp.swift in Sources */,
+				90BA1D6C2B8932B1004157A8 /* PathPositions.swift in Sources */,
+				90BA1D6A2B892F8A004157A8 /* Neutron.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HW 3 - Shielding Calculations/Preview Content\"";
-				DEVELOPMENT_TEAM = 75J3K8B84J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -462,7 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HW 3 - Shielding Calculations/Preview Content\"";
-				DEVELOPMENT_TEAM = 75J3K8B84J;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

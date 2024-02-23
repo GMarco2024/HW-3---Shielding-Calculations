@@ -2,6 +2,8 @@
 //  ContentView.swift
 //  HW 3 - Shielding Calculations
 //
+//  ContentView.swift
+//
 //  Created by Marco on 2/22/24.
 //
 
@@ -10,8 +12,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var particleEndPositions: [(xPosition: Double, yPosition: Double)] = []
     @State var NumberOfPathsString = "1"
-    @State var BeamOffTheGroundString = "4m"
+    @State var BeamOffTheGroundString = "4"
     @State var EnergyLossString = ".10"
     @State var NeutronAbsorptionString = ""
     @State var NeutronEscapeeString = ""
@@ -44,7 +47,7 @@ struct ContentView: View {
                     .font(.headline)
                     .fontWeight(.regular)
                 
-                TextField("Height", text: $BeamOffTheGroundString)
+                TextField("Height in meters", text: $BeamOffTheGroundString)
                     .frame(maxWidth: 350)
                     .padding()
                 
@@ -72,12 +75,27 @@ struct ContentView: View {
                     .frame(maxWidth: 350)
                     .padding()
                 
-                 Wall()
+                 Wall(particleEndPositions: $particleEndPositions)
+
                     
-                     .padding()
-                                
+                Button(action: {
+                  
+                    let numberOfPaths = Int(NumberOfPathsString) ?? 1
+                    let beamHeight = CGFloat(Double(BeamOffTheGroundString.replacingOccurrences(of: "m", with: "")) ?? 4.0)
+                    let energyLossPercent = Double(EnergyLossString) ?? 0.10
+                    
+                    let results = simulateNeutronPaths(numberOfPaths: numberOfPaths, beamHeight: beamHeight, energyLossPercent: energyLossPercent, initialEnergy: 1.0, wallDimensions: CGSize(width: 5, height: 5))
+                    NeutronAbsorptionString = "\(results.absorbed)"
+                    NeutronEscapeeString = "\(results.escaped)"
+                    particleEndPositions = results.endPositions
+                }) {
+                    Text("Simulate Neutron Paths")
+                }
+                .padding(20)
+                
+             
              }
-                     .padding()
+                .padding()
         }
     }
 }
