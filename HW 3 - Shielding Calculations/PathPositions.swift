@@ -18,13 +18,14 @@ struct PathPositions: View {
     
     // The height of the background for scaling the positions
     
-    private let backgroundWidth: CGFloat = 600
-    private let backgroundHeight: CGFloat = 600
+    private let backgroundWidth: CGFloat = 500
+    private let backgroundHeight: CGFloat = 500
 
     var body: some View {
         
         ForEach(pathEnd.indices, id: \.self) { index in
-            drawParticle(at: pathEnd[index])
+                    let position = pathEnd[index]
+                    drawParticle(at: position)
         }
     }
 
