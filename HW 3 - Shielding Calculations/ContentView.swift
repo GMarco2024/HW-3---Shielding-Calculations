@@ -18,6 +18,8 @@ struct ContentView: View {
     @State var EnergyLossString = ".10"
     @State var NeutronAbsorptionString = ""
     @State var NeutronEscapeeString = ""
+    @State var PercentNeutronAbsorbedString = ""
+    @State var PercentNeutronEscapeeString = ""
     @State var myNeutron = Neutron(position:CGPoint(x: 0.0,y: 0.0) , initialEnergy: 0.0)
     
     var body: some View {
@@ -67,6 +69,14 @@ struct ContentView: View {
                     .frame(maxWidth: 350)
                     .padding()
                 
+                Text("Percentage of Absorbed Neutrons")
+                    .font(.headline)
+                    .fontWeight(.regular)
+                
+                TextField("Percentage of Neutrons Absorbed", text: $PercentNeutronAbsorbedString)
+                    .frame(maxWidth: 350)
+                    .padding()
+                
                 Text("Escaped Neutrons")
                     .font(.headline)
                     .fontWeight(.regular)
@@ -75,26 +85,42 @@ struct ContentView: View {
                     .frame(maxWidth: 350)
                     .padding()
                 
+                Text("Percentage of Escaped Neutrons")
+                    .font(.headline)
+                    .fontWeight(.regular)
+                
+                TextField("Percentage of Neutron Escapees", text: $PercentNeutronEscapeeString)
+                    .frame(maxWidth: 350)
+                    .padding()
+                
+                
                 Wall(pathEnd: $pathEnd)
 
                 Button(action: {
-                  
                     let numberOfPaths = Int(NumberOfPathsString) ?? 1
                     let beamHeight = CGFloat(Double(BeamOffTheGroundString.replacingOccurrences(of: "m", with: "")) ?? 4.0)
                     let energyLossPercent = Double(EnergyLossString) ?? 0.10
                     
+                    // Simulate neutron paths
                     let results = myNeutron.simulateNeutronPaths(numberOfPaths: numberOfPaths, beamHeight: beamHeight, energyLossPercent: energyLossPercent, initialEnergy: 1.0, wallDimensions: CGSize(width: 5, height: 5))
+                    
+                    // Update UI with simulation results
                     NeutronAbsorptionString = "\(results.absorbed)"
                     NeutronEscapeeString = "\(results.escaped)"
                     pathEnd = results.endPositions
                     
-                }
-                )
+                    // Calculate and update percentages
+                    let total = results.absorbed + results.escaped
+                    let percentAbsorbed = total > 0 ? (Double(results.absorbed) / Double(total)) * 100 : 0
+                    let percentEscaped = total > 0 ? (Double(results.escaped) / Double(total)) * 100 : 0
+                    
+                    PercentNeutronAbsorbedString = "\(percentAbsorbed)%"
+                    PercentNeutronEscapeeString = "\(percentEscaped)%"
+                })
                 {
-                    
                     Text("Simulate Neutron Paths")
-                    
                 }
+
                 
                     
                 }
