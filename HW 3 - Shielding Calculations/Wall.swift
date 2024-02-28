@@ -19,14 +19,14 @@ struct Wall: View {
         ZStack {
             
             
-// Drawing the background for the entire view. We make it entirely in black.
+// Drawing the background for the entire view. We make it entirely in black. This sets the size of the rectangle to the specified background dimensions
                         
             Rectangle()
                 .fill(Color.black)
                 .frame(width: backgroundWidth, height: backgroundHeight)
             
             
-// Drawing the simulation area boundary
+// Drawing for the wall in particular. We make it entirely in black. This sets the size of the rectangle to the specified wall dimensions as mentioned.
             
             Rectangle()
                 .strokeBorder(Color.white, lineWidth: 1)
